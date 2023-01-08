@@ -1,9 +1,12 @@
+/* global styles */
 body {
     font-family: Arial, sans-serif;
+    background-color: #222;
+    color: #fff;
 }
 
 h1, h2, h3 {
-    color: #333;
+    color: #fff;
 }
 
 form {
@@ -21,12 +24,23 @@ input[type="text"], input[type="password"], input[type="submit"] {
     border-radius: 4px;
 }
 
-input[type="submit"] {
-    background-color: #4CAF50;
-    color: white;
-    cursor: pointer;
+/* dark mode styles */
+.dark-mode {
+    background-color: #222;
+    color: #fff;
 }
 
-input[type="submit"]:hover {
-    background-color: #45a049;
+.dark-mode input[type="text"], .dark-mode input[type="password"], .dark-mode input[type="submit"] {
+    border-color: #fff;
+}
+
+/* background blur styles */
+.blur {
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+}
+
+.no-blur {
+    filter: none;
+    -webkit-filter: none;
 }
